@@ -1,2 +1,2 @@
-# SIGAQ
-Help people and animals coexist so people do not overtake animal habitats.
+# So I've Got a Question?
+> A platform to help human beings and animals coexist.
