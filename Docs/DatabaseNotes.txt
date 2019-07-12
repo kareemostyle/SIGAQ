@@ -1,0 +1,12 @@
+Possible Database Setup:
+
+Entities (WIP)
+- Users
+- Topics
+- Locations
+- Organizations
+- Posts
+- Threads/Conversations
+
+Relations
+- TBD, depends on final entity setup above
