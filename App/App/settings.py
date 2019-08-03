@@ -54,7 +54,7 @@ ROOT_URLCONF = 'App.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\Kareem Taleb\Documents\Personal Projects\SIGAQ\App\SIGAQ\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
