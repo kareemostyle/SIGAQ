@@ -2,58 +2,55 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
+
+<head>
     <!-- A set of metadata for the website. -->
     <meta charset="UTF-8">
     <meta name="description" content="A platform to help human beings and animals coexist">
     <meta name="author" content="Kareem Taleb">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>So I've Got a Question.</title>
-    </head>
-    <body>
-        <!-- Wrapper for the website home page. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>So I've Got a Question.</title>
+</head>
+
+<body>
+    <!-- Wrapper for the website home page. -->
+    <div style="background-color: #336B87">
         <div>
-            <div>
-                <!-- The navigation bar. -->
-                <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #336B87">
-                    <!-- W.I.P. Logo of Non-profit. Click leads to home page a.k.a. this page. -->
-                    <a class="navbar-brand" href="#">
-                        Image
-                    </a>
-                    <!-- W.I.P. Contains the proper navigation. Includes the blog, forum, about us, and Login/Signup buttons. -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Learn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Forum</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#"class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                About
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="#" class="dropdown-item">FAQ</a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">Contact Us</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Centered text in the navbar. -->
-                    <ul class="m-auto text-center">
-                        <li class="navbar-text">
-                            <p class="text-white font-italic">A Platform to Help Human Beings and Animals Coexist.</p>
-                        </li>
-                    </ul>
-                    <!-- Login/Sign-Up button placed on far right of navbar. -->
-                    <ul class="navbar-nav ml-auto">                  
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Login/Sign-Up</a>
-                        </li>   
-                    </ul>
-                </nav>
-            </div>
+            <!-- The navigation bar. -->
+            <nav class="navbar navbar-expand-sm navbar-dark py-0" style="background-color: #336B87">
+                <!-- W.I.P. Logo of Non-profit. Click leads to home page a.k.a. this page. -->
+                <a class="navbar-brand mr-md-2" href="#">
+                    Image
+                </a>
+                <!-- W.I.P. Contains the proper navigation. Includes the blog, forum, about us, and Login/Signup buttons. -->
+                <ul class="navbar-nav mr-auto flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item">FAQ</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Contact Us</a>
+                        </div>
+                    </li>
+                    <p class="nav-link align-middle text-white font-italic text-warning">A Platform to Help Human Beings
+                        and Animals Coexist.</p>
+                </ul>
+                <!-- Login/Sign-Up button placed on far right of navbar. -->
+                <a href="#" class="btn btn-outline-warning nav-link">Login/Sign-Up</a>
+            </nav>
+        </div>
+        <div class="container">
             <div id="carouselNav" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselNav" data-slide-to="0" class="active"></li>
@@ -62,13 +59,28 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="{% static 'SIGAQ/images/placeholder.png' %}" alt="First slide">
+                        <img class="d-block w-100 img-fluid" src="{% static 'SIGAQ/images/placeholder.png' %}"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Picture 1</h5>
+                            <p>Description of Picture 1</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="{% static 'SIGAQ/images/placeholder2.png' %}" alt="Second slide">
+                        <img class="d-block w-100 h-50" src="{% static 'SIGAQ/images/placeholder2.png' %}"
+                            alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Picture 2</h5>
+                            <p>Description of Picture 2</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="{% static 'SIGAQ/images/placeholder3.png' %}" alt="Third slide">
+                        <img class="d-block w-100 h-50" src="{% static 'SIGAQ/images/placeholder3.png' %}"
+                            alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Picture 3</h5>
+                            <p>Description of Picture 3</p>
+                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselNav" role="button" data-slide="prev">
@@ -81,8 +93,20 @@
                 </a>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+        <!-- The footer of the website. -->
+        <div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
