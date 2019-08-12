@@ -1,18 +1,57 @@
 <!-- So I've Got a Question: Sign-Up/Login Page -->
+{% load static %}
 <!doctype html>
 <html lang="en">
+
+<head>
     <!-- A set of metadata for the website. -->
     <meta charset="UTF-8">
     <meta name="description" content="A platform to help human beings and animals coexist">
     <meta name="author" content="Kareem Taleb">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>So I've Got a Question.</title>
+</head>
 
-    </head>
-    <body>
-        <!-- Wrapper for the website sign-up/login page. -->
+<body>
+    <!-- Wrapper for the website blog page. -->
+    <div>
         <div>
-    
+            <!-- The navigation bar. -->
+            <nav class="navbar navbar-expand-sm navbar-dark py-0" style="background-color: #336B87">
+                <!-- W.I.P. Logo of Non-profit. Click leads to home page a.k.a. this page. -->
+                <a class="navbar-brand mr-md-2" href="#">
+                    Image
+                </a>
+                <!-- W.I.P. Contains the proper navigation. Includes the blog, forum, about us, and Login/Signup buttons. -->
+                <ul class="navbar-nav mr-auto flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" id="navbarDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item">FAQ</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Contact Us</a>
+                        </div>
+                    </li>
+                    <p class="nav-link align-middle text-white font-italic text-warning">A Platform to Help Human Beings
+                        and Animals Coexist.</p>
+                </ul>
+                <!-- Login/Sign-Up button placed on far right of navbar. -->
+                <a href="#" class="btn btn-outline-warning nav-link">Login/Sign-Up</a>
+            </nav>
         </div>
-    </body>
+
+    </div>
+</body>
+
 </html>
