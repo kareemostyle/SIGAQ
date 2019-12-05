@@ -49,6 +49,7 @@ target/
 __pycache__/
 local_settings.py
 
+#db and environment
 .env
 db.sqlite3
 .vscode/
